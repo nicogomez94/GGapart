@@ -129,7 +129,6 @@
                 </div>
                 <div class="room-actions">
                     <button class="book-now">BOOK NOW</button>
-                    <button class="more-details">MORE DETAILS</button>
                 </div>
             </div>
         </div>
@@ -167,7 +166,6 @@
                 </div>
                 <div class="room-actions">
                     <button class="book-now">BOOK NOW</button>
-                    <button class="more-details">MORE DETAILS</button>
                 </div>
             </div>
             <div class="room-image">
@@ -211,7 +209,6 @@
                 </div>
                 <div class="room-actions">
                     <button class="book-now">BOOK NOW</button>
-                    <button class="more-details">MORE DETAILS</button>
                 </div>
             </div>
         </div>
@@ -249,7 +246,6 @@
                 </div>
                 <div class="room-actions">
                     <button class="book-now">BOOK NOW</button>
-                    <button class="more-details">MORE DETAILS</button>
                 </div>
             </div>
             <div class="room-image">
@@ -257,10 +253,64 @@
             </div>
         </div>
 
-        <div class="load-more">
-            <button>LOAD MORE</button>
+    </section> <!-- Cierre de room-listings -->
+
+    <!-- Nearby Highlights Section -->
+    <section class="nearby-highlights">
+        <h2 class="section-title">CERCA DE LO MEJOR DE BUENOS AIRES</h2>
+        <div class="highlights-container">
+            <div class="highlight-card">
+                <img src="./assets/img/teatro_colon.jpg" alt="Puntos Turísticos - Teatro Colón"> <!-- Reemplaza con tu ruta de imagen -->
+                <h3>PUNTOS TURISTICOS</h3>
+                <p>Departamentos ubicados a pocas cuadras de puntos característicos de Buenos Aires, como el Obelisco, Puerto Madero o el Teatro Colón.</p>
+            </div>
+            <div class="highlight-card">
+                <img src="./assets/img/transporte_publico.png" alt="Transporte Público"> <!-- Reemplaza con tu ruta de imagen o usa un placeholder -->
+                <h3>TRANSPORTE PUBLICO</h3>
+                <p>Ubicación privilegiada, a metros del subte B estación Florida, y a sólo 3 cuadras de las líneas de subte A, B, C, D, y E. Gran cantidad de colectivos cercanos (24, 76, 146, 105, 99, 140, 111, 39, 59, 67, 10, 17, 60, 29, 2, 64, 33, 70, 100, 129, 152, entre otros).</p>
+            </div>
+            <div class="highlight-card">
+                <img src="./assets/img/guerrin.jpg" alt="Opciones Gastronómicas - Pizzería Güerrin"> <!-- Reemplaza con tu ruta de imagen -->
+                <h3>OPCIONES GASTRONÓMICAS</h3>
+                <p>Cerca de restaurantes emblemáticos de la ciudad de Buenos Aires, como Pizzería Güerrín, Café Tortoni o el Palacio de la Pizza.</p>
+            </div>
         </div>
     </section>
+    <!-- Fin de Nearby Highlights Section -->
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="contact-container">
+            <h2 class="contact-header">Contacto</h2>
+            <p class="contact-subtext">¿Tienes alguna pregunta? No dudes en contactarnos.</p>
+
+            <form class="contact-form" action="[TU_ENDPOINT_DE_FORMULARIO]" method="POST"> <!-- Opcional: Añade un endpoint si procesarás el formulario -->
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject"> <!-- El asunto puede ser opcional -->
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">ENVIAR MENSAJE</button>
+            </form>
+        </div>
+    </section>
+    <!-- Fin de Contact Form Section -->
 
     <!-- Footer -->
     <footer>
