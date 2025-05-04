@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambiado a español -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Encabezado -->
     <header>
         <div class="top-bar">
             <div class="contact-info">
@@ -16,39 +16,38 @@
                 <span><i class="far fa-envelope"></i> nicolasgomez94@gmail.com</span>
             </div>
             <div class="user-actions">
-                <select class="language">
+                <select class="language" title="Idioma"> <!-- Añadido title -->
                     <option>EN</option>
-                    <option>ES</option>
+                    <option selected>ES</option> <!-- Seleccionado Español -->
                     <option>FR</option>
                 </select>
-                <select class="currency">
+                <select class="currency" title="Moneda"> <!-- Añadido title -->
                     <option>USD</option>
                     <option>EUR</option>
-                    <option>GBP</option>
+                    <option>ARS</option> <!-- Cambiado a ARS -->
                 </select>
-                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="login-btn">Ingresar</a> <!-- Traducido -->
             </div>
         </div>
         <nav class="main-nav">
             <ul class="nav-links">
-                <li><a href="#">About</a></li>
-                <!-- <li><a href="#" class="active">Rooms</a></li> -->
-                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Nosotros</a></li> <!-- Traducido -->
+                <li><a href="#">Apartamentos</a></li> <!-- Traducido -->
             </ul>
             <div class="logo">
-                <img src="./assets/img/312197608_151596110908832_1179210662604263470_n.jpg" alt="gg">
+                <img src="./assets/img/312197608_151596110908832_1179210662604263470_n.jpg" alt="Logo G&G Apartments"> <!-- Alt text mejorado -->
                 <h1>G&G Apartments</h1>
             </div>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Añadido aria-label -->
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a> <!-- Cambiado a Instagram y añadido aria-label -->
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a> <!-- Cambiado a WhatsApp y añadido aria-label -->
+                <a href="#" aria-label="Airbnb"><i class="fab fa-airbnb"></i></a> <!-- Cambiado a Airbnb y añadido aria-label -->
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Sección Principal -->
     <section class="hero">
         <div class="hero-content">
             <h1>Disfruta tu Estadía en Buenos Aires</h1>
@@ -59,156 +58,79 @@
         </div>
     </section>
 
-    <!-- Booking Form -->
+    <!-- Formulario de Reserva -->
     <section class="booking-form">
         <div class="form-container">
             <div class="form-group">
-                <label>CHECK IN</label>
+                <label>LLEGADA</label> <!-- Traducido -->
                 <div class="date-input">
                     <span class="day">22</span>
-                    <select class="month">
-                        <option selected>Dec</option>
+                    <select class="month" title="Mes de llegada"> <!-- Añadido title -->
+                        <option selected>Dic</option>
+                        <!-- Añadir otros meses si es necesario -->
                     </select>
                 </div>
             </div>
             <div class="form-group">
-                <label>CHECK OUT</label>
+                <label>SALIDA</label> <!-- Traducido -->
                 <div class="date-input">
                     <span class="day">28</span>
-                    <select class="month">
-                        <option selected>Dec</option>
+                    <select class="month" title="Mes de salida"> <!-- Añadido title -->
+                        <option selected>Dic</option>
+                        <!-- Añadir otros meses si es necesario -->
                     </select>
                 </div>
             </div>
             <div class="form-group">
-                <label>GUESTS</label>
+                <label>HUÉSPEDES</label> <!-- Traducido -->
                 <div class="guest-input">
                     <span>02</span>
+                    <!-- Podría ser un input type="number" o select -->
                 </div>
             </div>
-            <button class="availability-btn">CHECK AVAILABILITY</button>
+            <button class="availability-btn">VER DISPONIBILIDAD</button> <!-- Traducido -->
         </div>
     </section>
 
-    <!-- Room Listings -->
+    <!-- Listado de Apartamentos -->
     <section class="room-listings">
         <h2 class="main-header-listings">Alojamientos Destacados</h2>
         <div class="room-card">
             <div class="room-image">
-                <img src="https://placeholder.com/room1" alt="Luxury Super Delux">
+                <img src="assets/img/tucuman.jpg" alt="Apartamento Obelisco River View"> <!-- Alt text mejorado -->
             </div>
             <div class="room-details">
                 <div class="rating">
                     <span class="stars">★★★★★</span>
-                    <span class="review-count">12 Reviews</span>
+                    <span class="review-count">12 Reseñas</span> <!-- Traducido -->
                 </div>
-                <h2>Luxury Super Delux</h2>
-                <p>Eipor incididunt ut labore et dolore magna lqui ut enim ad minim ut enim ut dolore et labore magna eipor incididunt ut labore et dolore magna</p>
+                <h2>Obelisco River View</h2>
+                <p>Disfruta de vistas increíbles y confort en pleno centro de Buenos Aires. Ideal para tu visita turística o de negocios.</p> <!-- Descripción ejemplo -->
                 <div class="price">
-                    <span class="starts-from">Starts from</span>
-                    <span class="amount">$299</span>
-                    <span class="per-night">/ NIGHT</span>
+                    <span class="starts-from">Desde</span> <!-- Traducido -->
+                    <span class="amount">$40</span>
+                    <span class="per-night">/ NOCHE</span> <!-- Traducido -->
                 </div>
                 <div class="room-info">
                     <div class="info-item">
-                        <div class="label">STATUS</div>
-                        <div class="value">Available</div>
+                        <div class="label">ESTADO</div> <!-- Traducido -->
+                        <div class="value">Disponible</div> <!-- Traducido -->
                     </div>
                     <div class="info-item">
-                        <div class="label">PAYMENT</div>
-                        <div class="value">30% Advanced</div>
+                        <div class="label">PAGO</div> <!-- Traducido -->
+                        <div class="value">30% Adelantado</div> <!-- Traducido -->
                     </div>
                     <div class="info-item">
-                        <div class="label">GUEST</div>
-                        <div class="value">2</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">BEDS</div>
-                        <div class="value">1</div>
-                    </div>
-                </div>
-                <div class="room-actions">
-                    <button class="book-now">BOOK NOW</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="room-card">
-            <div class="room-details">
-                <div class="rating">
-                    <span class="stars">★★★★★</span>
-                    <span class="review-count">12 Reviews</span>
-                </div>
-                <h2>Simple Family Room</h2>
-                <p>Eipor incididunt ut labore et dolore magna lqui ut enim ad minim ut enim ut dolore et labore magna eipor incididunt</p>
-                <div class="price">
-                    <span class="starts-from">Starts from</span>
-                    <span class="amount">$399</span>
-                    <span class="per-night">/ NIGHT</span>
-                </div>
-                <div class="room-info">
-                    <div class="info-item">
-                        <div class="label">STATUS</div>
-                        <div class="value">Available</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">PAYMENT</div>
-                        <div class="value">30% Advanced</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">GUEST</div>
-                        <div class="value">3</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">BEDS</div>
-                        <div class="value">2</div>
-                    </div>
-                </div>
-                <div class="room-actions">
-                    <button class="book-now">BOOK NOW</button>
-                </div>
-            </div>
-            <div class="room-image">
-                <img src="https://placeholder.com/room2" alt="Simple Family Room">
-            </div>
-        </div>
-
-        <div class="room-card">
-            <div class="room-image">
-                <img src="https://placeholder.com/room3" alt="Luxury Family Delux">
-            </div>
-            <div class="room-details">
-                <div class="rating">
-                    <span class="stars">★★★★★</span>
-                    <span class="review-count">12 Reviews</span>
-                </div>
-                <h2>Luxury Family Delux</h2>
-                <p>Eipor incididunt ut labore et dolore magna lqui ut enim ad minim ut enim ut dolore et labore magna eipor incididunt ut labore et dolore magna</p>
-                <div class="price">
-                    <span class="starts-from">Starts from</span>
-                    <span class="amount">$499</span>
-                    <span class="per-night">/ NIGHT</span>
-                </div>
-                <div class="room-info">
-                    <div class="info-item">
-                        <div class="label">STATUS</div>
-                        <div class="value">Available</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">PAYMENT</div>
-                        <div class="value">30% Advanced</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">GUEST</div>
+                        <div class="label">HUÉSPEDES</div> <!-- Traducido -->
                         <div class="value">4</div>
                     </div>
                     <div class="info-item">
-                        <div class="label">BEDS</div>
-                        <div class="value">2</div>
+                        <div class="label">CAMAS</div> <!-- Traducido -->
+                        <div class="value">3</div>
                     </div>
                 </div>
                 <div class="room-actions">
-                    <button class="book-now">BOOK NOW</button>
+                    <a href="obelisco.html"><button class="book-now">VER DETALLES</button></a> <!-- Cambiado texto y añadido enlace -->
                 </div>
             </div>
         </div>
@@ -216,75 +138,156 @@
         <div class="room-card">
             <div class="room-details">
                 <div class="rating">
-                    <span class="stars">★★★★★</span>
-                    <span class="review-count">12 Reviews</span>
+                    <span class="stars">★★★★☆</span> <!-- Ejemplo rating -->
+                    <span class="review-count">8 Reseñas</span> <!-- Traducido -->
                 </div>
-                <h2>Single Super Delux</h2>
-                <p>Eipor incididunt ut labore et dolore magna lqui ut enim ad minim ut enim ut dolore et labore magna eipor incididunt</p>
+                <h2>Recoleta Chic Apartment</h2> <!-- Nombre ejemplo -->
+                <p>Elegancia y comodidad en el corazón de Recoleta. Cercano a museos, parques y centros comerciales.</p> <!-- Descripción ejemplo -->
                 <div class="price">
-                    <span class="starts-from">Starts from</span>
-                    <span class="amount">$399</span>
-                    <span class="per-night">/ NIGHT</span>
+                    <span class="starts-from">Desde</span> <!-- Traducido -->
+                    <span class="amount">$55</span> <!-- Precio ejemplo -->
+                    <span class="per-night">/ NOCHE</span> <!-- Traducido -->
                 </div>
                 <div class="room-info">
                     <div class="info-item">
-                        <div class="label">STATUS</div>
-                        <div class="value">Available</div>
+                        <div class="label">ESTADO</div> <!-- Traducido -->
+                        <div class="value">Disponible</div> <!-- Traducido -->
                     </div>
                     <div class="info-item">
-                        <div class="label">PAYMENT</div>
-                        <div class="value">30% Advanced</div>
+                        <div class="label">PAGO</div> <!-- Traducido -->
+                        <div class="value">30% Adelantado</div> <!-- Traducido -->
                     </div>
                     <div class="info-item">
-                        <div class="label">GUEST</div>
-                        <div class="value">1</div>
+                        <div class="label">HUÉSPEDES</div> <!-- Traducido -->
+                        <div class="value">2</div> <!-- Ejemplo -->
                     </div>
                     <div class="info-item">
-                        <div class="label">BEDS</div>
-                        <div class="value">1</div>
+                        <div class="label">CAMAS</div> <!-- Traducido -->
+                        <div class="value">1</div> <!-- Ejemplo -->
                     </div>
                 </div>
                 <div class="room-actions">
-                    <button class="book-now">BOOK NOW</button>
+                     <a href="recoleta.html"><button class="book-now">VER DETALLES</button></a> <!-- Cambiado texto y añadido enlace -->
                 </div>
             </div>
             <div class="room-image">
-                <img src="https://placeholder.com/room4" alt="Single Super Delux">
+                <img src="https://placeholder.com/room-recoleta" alt="Apartamento Recoleta Chic"> <!-- Alt text mejorado -->
             </div>
         </div>
 
-    </section> <!-- Cierre de room-listings -->
+        <div class="room-card">
+            <div class="room-image">
+                <img src="https://placeholder.com/room-palermo" alt="Apartamento Palermo Soho"> <!-- Alt text mejorado -->
+            </div>
+            <div class="room-details">
+                <div class="rating">
+                    <span class="stars">★★★★★</span> <!-- Ejemplo -->
+                    <span class="review-count">15 Reseñas</span> <!-- Traducido -->
+                </div>
+                <h2>Palermo Soho Modern Loft</h2> <!-- Nombre ejemplo -->
+                <p>Vive la movida de Palermo Soho en este loft moderno y luminoso. Rodeado de bares, restaurantes y tiendas de diseño.</p> <!-- Descripción ejemplo -->
+                <div class="price">
+                    <span class="starts-from">Desde</span> <!-- Traducido -->
+                    <span class="amount">$60</span> <!-- Precio ejemplo -->
+                    <span class="per-night">/ NOCHE</span> <!-- Traducido -->
+                </div>
+                <div class="room-info">
+                    <div class="info-item">
+                        <div class="label">ESTADO</div> <!-- Traducido -->
+                        <div class="value">Disponible</div> <!-- Traducido -->
+                    </div>
+                    <div class="info-item">
+                        <div class="label">PAGO</div> <!-- Traducido -->
+                        <div class="value">30% Adelantado</div> <!-- Traducido -->
+                    </div>
+                    <div class="info-item">
+                        <div class="label">HUÉSPEDES</div> <!-- Traducido -->
+                        <div class="value">3</div> <!-- Ejemplo -->
+                    </div>
+                    <div class="info-item">
+                        <div class="label">CAMAS</div> <!-- Traducido -->
+                        <div class="value">2</div> <!-- Ejemplo -->
+                    </div>
+                </div>
+                <div class="room-actions">
+                     <a href="palermo.html"><button class="book-now">VER DETALLES</button></a> <!-- Cambiado texto y añadido enlace -->
+                </div>
+            </div>
+        </div>
 
-    <!-- Nearby Highlights Section -->
+        <!-- Puedes eliminar o modificar esta última tarjeta si no la necesitas -->
+        <div class="room-card">
+            <div class="room-details">
+                <div class="rating">
+                    <span class="stars">★★★★☆</span> <!-- Ejemplo -->
+                    <span class="review-count">5 Reseñas</span> <!-- Traducido -->
+                </div>
+                <h2>San Telmo Colonial Studio</h2> <!-- Nombre ejemplo -->
+                <p>Encantador estudio con estilo colonial en el histórico barrio de San Telmo. Cerca de ferias de antigüedades y tanguerías.</p> <!-- Descripción ejemplo -->
+                <div class="price">
+                    <span class="starts-from">Desde</span> <!-- Traducido -->
+                    <span class="amount">$35</span> <!-- Precio ejemplo -->
+                    <span class="per-night">/ NOCHE</span> <!-- Traducido -->
+                </div>
+                <div class="room-info">
+                    <div class="info-item">
+                        <div class="label">ESTADO</div> <!-- Traducido -->
+                        <div class="value">Disponible</div> <!-- Traducido -->
+                    </div>
+                    <div class="info-item">
+                        <div class="label">PAGO</div> <!-- Traducido -->
+                        <div class="value">30% Adelantado</div> <!-- Traducido -->
+                    </div>
+                    <div class="info-item">
+                        <div class="label">HUÉSPEDES</div> <!-- Traducido -->
+                        <div class="value">2</div> <!-- Ejemplo -->
+                    </div>
+                    <div class="info-item">
+                        <div class="label">CAMAS</div> <!-- Traducido -->
+                        <div class="value">1</div> <!-- Ejemplo -->
+                    </div>
+                </div>
+                <div class="room-actions">
+                     <a href="santelmo.html"><button class="book-now">VER DETALLES</button></a> <!-- Cambiado texto y añadido enlace -->
+                </div>
+            </div>
+            <div class="room-image">
+                <img src="https://placeholder.com/room-santelmo" alt="Estudio San Telmo Colonial"> <!-- Alt text mejorado -->
+            </div>
+        </div>
+
+    </section> <!-- Cierre de Listado de Apartamentos -->
+
+    <!-- Sección Destacados Cercanos -->
     <section class="nearby-highlights">
         <h2 class="section-title">CERCA DE LO MEJOR DE BUENOS AIRES</h2>
         <div class="highlights-container">
             <div class="highlight-card">
-                <img src="./assets/img/teatro_colon.jpg" alt="Puntos Turísticos - Teatro Colón"> <!-- Reemplaza con tu ruta de imagen -->
+                <img src="./assets/img/teatro_colon.jpg" alt="Puntos Turísticos - Teatro Colón">
                 <h3>PUNTOS TURISTICOS</h3>
                 <p>Departamentos ubicados a pocas cuadras de puntos característicos de Buenos Aires, como el Obelisco, Puerto Madero o el Teatro Colón.</p>
             </div>
             <div class="highlight-card">
-                <img src="./assets/img/transporte_publico.png" alt="Transporte Público"> <!-- Reemplaza con tu ruta de imagen o usa un placeholder -->
+                <img src="./assets/img/transporte_publico.png" alt="Transporte Público">
                 <h3>TRANSPORTE PUBLICO</h3>
                 <p>Ubicación privilegiada, a metros del subte B estación Florida, y a sólo 3 cuadras de las líneas de subte A, B, C, D, y E. Gran cantidad de colectivos cercanos (24, 76, 146, 105, 99, 140, 111, 39, 59, 67, 10, 17, 60, 29, 2, 64, 33, 70, 100, 129, 152, entre otros).</p>
             </div>
             <div class="highlight-card">
-                <img src="./assets/img/guerrin.jpg" alt="Opciones Gastronómicas - Pizzería Güerrin"> <!-- Reemplaza con tu ruta de imagen -->
+                <img src="./assets/img/guerrin.jpg" alt="Opciones Gastronómicas - Pizzería Güerrin">
                 <h3>OPCIONES GASTRONÓMICAS</h3>
                 <p>Cerca de restaurantes emblemáticos de la ciudad de Buenos Aires, como Pizzería Güerrín, Café Tortoni o el Palacio de la Pizza.</p>
             </div>
         </div>
     </section>
-    <!-- Fin de Nearby Highlights Section -->
+    <!-- Fin de Sección Destacados Cercanos -->
 
-    <!-- Contact Form Section -->
+    <!-- Sección Formulario de Contacto -->
     <section class="contact-form-section">
         <div class="contact-container">
             <h2 class="contact-header">Contacto</h2>
             <p class="contact-subtext">¿Tienes alguna pregunta? No dudes en contactarnos.</p>
 
-            <form class="contact-form" action="[TU_ENDPOINT_DE_FORMULARIO]" method="POST"> <!-- Opcional: Añade un endpoint si procesarás el formulario -->
+            <form class="contact-form" action="[TU_ENDPOINT_DE_FORMULARIO]" method="POST">
                 <div class="form-row">
                     <div class="input-group">
                         <label for="name">Nombre</label>
@@ -298,7 +301,7 @@
 
                 <div class="input-group">
                     <label for="subject">Asunto</label>
-                    <input type="text" id="subject" name="subject"> <!-- El asunto puede ser opcional -->
+                    <input type="text" id="subject" name="subject">
                 </div>
 
                 <div class="input-group">
@@ -310,61 +313,61 @@
             </form>
         </div>
     </section>
-    <!-- Fin de Contact Form Section -->
+    <!-- Fin de Sección Formulario de Contacto -->
 
-    <!-- Footer -->
+    <!-- Pie de Página -->
     <footer>
         <div class="footer-content">
             <div class="footer-column">
-                <h3>About</h3>
+                <h3>Nosotros</h3> <!-- Traducido -->
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Offers</a></li>
-                    <li><a href="#">Help Guide</a></li>
+                    <li><a href="#">Quiénes Somos</a></li> <!-- Traducido -->
+                    <li><a href="#">La Empresa</a></li> <!-- Traducido -->
+                    <li><a href="#">Nuestro Equipo</a></li> <!-- Traducido -->
+                    <li><a href="#">Ofertas</a></li> <!-- Traducido -->
+                    <li><a href="#">Guía de Ayuda</a></li> <!-- Traducido -->
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>Service</h3>
+                <h3>Servicios</h3> <!-- Traducido -->
                 <ul>
-                    <li><a href="#">Hotel Booking</a></li>
-                    <li><a href="#">Online Ticket</a></li>
-                    <li><a href="#">Transfer</a></li>
-                    <li><a href="#">Restaurants</a></li>
-                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Reserva de Apartamentos</a></li> <!-- Traducido -->
+                    <li><a href="#">Tickets Online</a></li> <!-- Traducido -->
+                    <li><a href="#">Traslados</a></li> <!-- Traducido -->
+                    <li><a href="#">Restaurantes</a></li> <!-- Traducido -->
+                    <li><a href="#">Entretenimiento</a></li> <!-- Traducido -->
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>Quick Links</h3>
+                <h3>Enlaces Rápidos</h3> <!-- Traducido -->
                 <ul>
-                    <li><a href="#">Terms & General</a></li>
-                    <li><a href="#">Promotional Offers</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li> <!-- Traducido -->
+                    <li><a href="#">Ofertas Promocionales</a></li> <!-- Traducido -->
+                    <li><a href="#">Preguntas Frecuentes</a></li> <!-- Traducido -->
+                    <li><a href="#">Política de Devolución</a></li> <!-- Traducido -->
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>Address</h3>
+                <h3>Dirección</h3> <!-- Traducido -->
                 <ul class="address">
-                    <li><i class="fas fa-map-marker-alt"></i> 25, Blockhaus, Envato Street, Cleo House</li>
-                    <li><i class="fas fa-phone-alt"></i> +98 558 547 589 (Mobile)</li>
-                    <li><i class="fas fa-envelope"></i> info@domain.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</li> <!-- Actualizado -->
+                    <li><i class="fas fa-phone-alt"></i> +54 9 5229-1994</li> <!-- Actualizado -->
+                    <li><i class="fas fa-envelope"></i> nicolasgomez94@gmail.com</li> <!-- Actualizado -->
                 </ul>
             </div>
         </div>
         <div class="bottom-footer">
             <div class="copyright">
-                <img src="https://placeholder.com/logo" alt="ROVERO">
-                <span>ROVERO</span>
-                <p>Designed by <strong>Jamal Khan</strong> © 2015</p>
+                <img src="./assets/img/312197608_151596110908832_1179210662604263470_n.jpg" alt="Logo G&G Apartments"> <!-- Actualizado -->
+                <span>G&G Apartments</span>
+                <p>Diseñado por <strong>N.G.</strong> © 2025</p> <!-- Actualizado -->
             </div>
             <div class="social-icons">
-                <span>Follow us</span>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <span>Síguenos</span> <!-- Traducido -->
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" aria-label="Airbnb"><i class="fab fa-airbnb"></i></a>
             </div>
         </div>
     </footer>
