@@ -47,6 +47,9 @@ header {
     background: rgb(0 0 0 / 0%);
 }
 
+h1{
+    color: white !important;
+}
 .top-bar {
     display: flex;
     display: none;
@@ -80,7 +83,7 @@ header {
 .main-nav {
     display: grid;
     grid-template-columns: 1fr auto 1fr; /* Tres columnas: izquierda, centro, derecha */
-    padding-top: 15px; /* Ajusta el espacio interno */
+    padding-top: 22px; /* Ajusta el espacio interno */
     color: white;
     align-items: start;
     background-color: transparent;
@@ -89,6 +92,10 @@ header {
 
 .nav-links {
     justify-self: start; /* Alinea los enlaces a la izquierda */
+}
+
+.color-menu-ind{
+    color: var(--aqua);
 }
 
 .logo {
